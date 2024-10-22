@@ -1,8 +1,10 @@
 .column {
-    min-width: 320px;
+    min-width: 200px;
     background-color: #f4f5f8;
     border-radius: 8px;
+
   }
+  
   
  
 
@@ -36,7 +38,7 @@
     padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1px;
     overflow-y: auto; /* Allows scrolling if content exceeds column height */
   }
 
