@@ -1,0 +1,120 @@
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 90px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-shrink: 0; /* Prevents header from shrinking */
+  }
+  
+  .ticket-id {
+    color: #6b6f76;
+    font-size: 14px;
+  }
+  
+  .user-avatar {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0; /* Prevents avatar from shrinking */
+  }
+  
+  .user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .status-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 2px solid white;
+  }
+  
+  .status-dot.available {
+    background-color: #4caf50;
+  }
+  
+  .card-title {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-shrink: 0; /* Prevents title section from shrinking */
+  }
+  
+  .card-title p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  /* Add truncate class for long text */
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px; /* Adjust based on your card width */
+  }
+  
+  .card-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto; /* Pushes tags to the bottom */
+    flex-shrink: 0; /* Prevents tags from shrinking */
+  }
+  
+  .tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    background-color: #f4f5f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #6b6f76;
+    max-width: 100%;
+    height: 22px; /* Fixed height for tags */
+  }
+  
+  .priority-tag {
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    padding: 2px 6px;
+  }
+  
+  .feature-tag {
+    background-color: #f4f5f8;
+  }
+  
+  .tag .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6b6f76;
+    flex-shrink: 0; /* Prevents dot from shrinking */
+  }
+
+  .column-content {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto; /* Allows scrolling if content exceeds column height */
+  }

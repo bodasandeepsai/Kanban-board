@@ -1,0 +1,44 @@
+.column {
+    min-width: 320px;
+    background-color: #f4f5f8;
+    border-radius: 8px;
+  }
+  
+ 
+
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .column-title {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* This will add a small gap between title and tickets length */
+    font-weight: 500;
+  }
+  
+  .ticket-count {
+    color: #6b6f76;
+  }
+  
+  .column-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+
+  
+
+  .column-content {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto; /* Allows scrolling if content exceeds column height */
+  }
+
+
+ 
